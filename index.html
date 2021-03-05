@@ -1,72 +1,146 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <link rel="icon" type="image/png" href=""/>
+    <title>Carlos Vargas Portafolio</title>
     <link rel="stylesheet" href="./mobile.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;700&display=swap" rel="stylesheet">
+     <!-- <link rel="icon" type="image/png" href=""/> -->
 </head>
 <body>
     <header>
-        <div>
-            <figure>
-                <img src="" alt="Logo">
-            </figure>
         <nav>
-            <ol>
+            <a href="#" class="nav--email-section"><span></span>@carlos.design</a>
+            <ul class="nav-right-section">
                 <li>
-                    <a href="#portafolio">Portafolio</a>
+                    <a href="#">Works</a>
                 </li>
                 <li>
-                    <a href="#eventos">Experencia</a>
+                    <a href="#">Resume</a>
                 </li>
-                <li>
-                    <a href="#contactos">Trabajemos Juntos</a>
+                <li> 
+                    <a href="#">Services</a>
                 </li>
-            </ol>
+                <li> 
+                    <a href="#" id="diferent-a">Contact</a>
+                </li>
+            </ul>
         </nav>
     </header>
-    <section>
-        <h1>
-            hola! Soy<strong>Carlos Vargas</strong> <br> <br> <strong></strong>
-        </h1>
-        <img> imagen de portada
-    </section>
-    <section id="portafolio" class="portafolio">
-        <h2> Portafolio (Proyectos)</h2>
-        <article>
-            <h3>Videos</h3>
-            <h6>videos / gift</h6>
-            <p><small>Cosas 1</small></p>
-            <p>Cosas 2</p>
-            <p>Cosas 3</p>
+    <main>
+        <section>
             <figure>
-                <img src="" alt="">
-            </figure>
-        </article>
-    </section>
-    <section id="eventos">
-        <h2>Mas sobre mi experiencia</h2>
-        <article>
-            <figure>
-                <img src="" alt="">
-            </figure>
-            <h3>Fecha</h3>
-            <p>Descripción</p>
-            <a href="#">Ver mas</a>
-        </article>
-    </section>
-    <section id="contactos">
-        <form action="">
-            <h3>¿Creeemos algo juntos?</h3>
-            <input type="text" placeholder="dejame tu email" required>
-            <button>Enviar</button>
-        </form>
-    </section>
-    <footer>Footer</footer>
+                <img src="./imgs/profile.png" alt="" class="main--img">
+            </figure}>
+            <p class="main-up-p">Hi, I'm Carlos <span><img src="./imgs/gesto-te-quiero-1F91F.png" alt=""></span></p>
+            <p class="main-center-p">Building digital <br>products, brands and <br> experience.</p>
+            <p class="main-down-p">a <b>Product Designer</b> and <b>Visual Developer</b> in SF. <br> I specialize in UI/UX design, Responsive web design, <br>and Visual Development.</p>
+            <button class="main-button">CONNECT WITH ME</button>
+        </section>
+        <div class="section-imgs">
+            <div>
+                <figure><img src="./imgs/1.1.PNG" alt="" class="size-imgs-1"></figure>
+                <figure><img src="./imgs/1.2.PNG" alt="" class="size-imgs-2"></figure>
+            </div>
+            <div>
+                <figure><img src="./imgs/2.0.png" alt="" class="img-center"></figure>
+            </div>
+            <div>
+                <figure><img src="./imgs/3.1.PNG" alt="" class="size-imgs-4"></figure>
+                <figure><img src="./imgs/3.2.PNG" alt="" class="size-imgs-5"></figure>
+            </div>
+        </div>
+        <section class="section-clients">
+            <h2>Clients</h2>
+            <div class="icon-contain">
+                <div class="container-clients-img">
+                    <span class="google-icon">
+                    </span>
+                </div>
+                <div class="container-clients-img">
+                    <span class="uber-icon">
+                    </span>
+                </div>
+                <div class="container-clients-img">
+                    <span class="google-icon">
+                    </span>
+                </div>
+                <div class="container-clients-img">
+                    <span class="uber-icon">
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="section-services">
+            <div class="background-services">
+                <div class="circle position-one"></div>
+                <div class="circle position-two"></div> 
+            </div>
+              <div class="service-container">
+                <p class="title-service">Services</p>
+                <div class="container-targets">
+                    <div class="target-service">
+                        <div class="target-service--img">
+                            <img src="./imgs/dardo1.1.PNG" alt="Dardo">
+                        </div>
+                        <p class="target-service--title">Strategy & Direction</p>
+                        <p class="target-service-p">Defining the problem, identifying the scope and finally, organising the design road map to bring out 100 % of every proyect.</p>
+                    </div>
+                    <div class="target-service">
+                        <div class="target-service--img">
+                            <img src="./imgs/hand2.1.PNG" alt="hand">
+                        </div>
+                        <p class="target-service--title">Design UI/UX</p>
+                        <p  class="target-service-p">Websits application or other design related tasks. I love tackling digital problems and help fix them.</p>
+                    </div>
+                    <div class="target-service">
+                        <div class="target-service--img">
+                            <img src="./imgs/cellphone3.1.PNG" alt="cellphone">
+                        </div>
+                        <p class="target-service--title">Mobile App</p>
+                        <p  class="target-service-p">It's 2021, we should really step up our mobile game o bit more, right? Open to tackling new mobile projects.</p>
+                    </div>
+                </div>
+              </div>
+        </section>
+        <section>
+            <div>
+                <h2>Resume</h2>
+            </div>
+            <div>
+                <h2>
+                    Work Experience
+                </h2>
+                <div>
+                    <h2>Uber <span></span></h2>
+                    <p>Product Designer</p>
+                    <p>August 2018 - December 2019</p>
+                </div>
+                <div>
+                    <h2>Apple <span></span></h2>
+                    <p>Product Designer</p>
+                    <p>December 2019 - Current</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    Education
+                </div>
+                <div>
+                    <h2>SUNY Polytechnic Institute <span></span></h2>
+                    <p> MS • Information Design & Technology</p>
+                    <p>2016 - 2017</p>
+
+                </div>
+                <div>
+                    <h2>Florida Gulf  Coast University<span></span></h2>
+                    <p> BA • Psychology</p>
+                    <p>2014 - 2015</p>
+
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
