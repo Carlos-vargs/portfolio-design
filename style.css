@@ -124,6 +124,10 @@ main {
     font-size: 1rem;
 }
 
+.main-button:hover {
+    background: linear-gradient(208.83deg, black 20%,blue 100%);
+}
+
 .main-button:focus {
     outline: none;
 }
@@ -175,18 +179,39 @@ main {
     justify-content: center;
     align-items: center;
     padding-top: 170px;
+    /* position: relative; */
+}
+
+.container--linedown-clients {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    width: 110px;
+    height: 100px;
+} 
+
+.linedown-clients {
+    background-color: transparent;
+    border: 4px solid #fdd7cd;
+    border-radius: 100%;
+    position: absolute;
+    width: 313px;
+    height: 225px;
+    top: 26px;
+    left: -107px;
 }
 
 .icon-contain {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 26px;
+    margin: 0px 26px 26px 26px;
 }
 .section-clients h2 {
-    font-size: 3rem;
+    font-size: 3.1rem;
     line-height: 3.2rem;
     font-weight: bold;
+    letter-spacing: -2px;
 }
 
 .container-clients-img {
@@ -195,8 +220,8 @@ main {
     width: 100px;
     margin: 26px 75px 0px  75px;
     -webkit-filter:grayscale(1);
-    filter: #949AA6; 
-    
+    filter: #949AA6;
+
 }
 
 .container-clients-img:hover {
@@ -230,9 +255,6 @@ main {
 .container-clients-img .duck-icon {
     background-image: url("./icons/duckduckgo.svg");
 }
-
-
-
 
 .section-services  {
     display: flex   ;
@@ -291,6 +313,25 @@ main {
     height: 850px;
 }
 
+.linedown-service {
+    background-color: transparent;
+    border: 4px solid #AEBFF2;
+    border-radius: 100%;
+    position: absolute;
+    width: 371px;
+    height: 204px;
+    top: 36px;
+    left: -106px;
+}
+
+.service-title-container {
+    position: relative;
+    width: 163px;
+    height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 .container-targets {
     display: flex;
     justify-content: center;
@@ -301,7 +342,7 @@ main {
 
 .target-service {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     background-color: white;
@@ -335,5 +376,117 @@ main {
     font-weight: 500;
     color: var(--color-text);
     opacity: .8;
-    
+}
+
+.section-personal-infomation {
+    width: 100%;
+    height: auto;
+}
+
+.section-personal-infomation--resume {
+    position: relative;
+    width: 83.5%;
+    text-align: left;
+    overflow: hidden;
+}
+
+.backgrounds {
+    width: 319px;
+    height: 61px;
+    bottom: -49px;
+    left: -64px;
+
+}
+
+.personal-information--title {
+    font-size: 3.2rem;
+    letter-spacing: -1px;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+    position: relative;
+    height: 95px;
+    width: 254px;
+}
+
+.two-hidden {
+    width: 163px;
+}
+
+.linedown {
+    position: absolute;
+    background-color: transparent;
+    border: 4px solid #D0EAEC;
+    border-radius: 100%;
+}
+
+.line-background {
+    width: 530px;
+    height: 111px;
+    left: -155px;
+    top: 33px;
+}
+
+.line-background-red {
+    border-color: #fdd7cd;
+    width: 300px;
+    height: 84px;
+    left: -88px;
+    top: 31px;
+}
+
+.section-personal-infomation--resume h2 {
+    font-size: 5.5rem;
+    letter-spacing: -4px;
+}
+
+.container-targets-information {
+    width: 83.5%;
+    margin: 0 auto;
+}
+
+.personal-infomation {
+    display: flex;
+    margin: 0 auto;
+}
+
+
+.experience--information {
+    display: flex;
+    flex-direction: column;
+    margin-top: 65px;
+    text-align: left;
+}
+
+.experience--information:nth-child(2) {
+    margin-left: 290px;
+}
+
+.personal-infomation .title {
+    padding-bottom: 19px;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+
+
+.personal-infomation .subtitle {
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.personal-infomation .dates {
+    font-size: 1.4rem;
+    padding-bottom: 51px;
+    color: #464C59;
+}
+
+.title span {
+    background-image: url("./icons/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-left: 20px;
 }
