@@ -80,6 +80,7 @@ main {
     width: 100%;
     min-width: 320px;
     height: auto;
+    overflow: hidden;
 }
 .main--img {
     width: 150px;
@@ -188,7 +189,7 @@ main {
     overflow: hidden;
     width: 110px;
     height: 100px;
-} 
+}
 
 .linedown-clients {
     background-color: transparent;
@@ -320,7 +321,7 @@ main {
     position: absolute;
     width: 371px;
     height: 204px;
-    top: 36px;
+    top: 41px;
     left: -106px;
 }
 
@@ -373,7 +374,6 @@ main {
 .target-service-p {
     padding: 29px 33px;
     font-size: 1.7em;
-    font-weight: 500;
     color: var(--color-text);
     opacity: .8;
 }
@@ -414,6 +414,10 @@ main {
     width: 163px;
 }
 
+.skills-hidden {
+    width: 90px;
+}
+
 .linedown {
     position: absolute;
     background-color: transparent;
@@ -425,7 +429,7 @@ main {
     width: 530px;
     height: 111px;
     left: -155px;
-    top: 33px;
+    top: 35px;
 }
 
 .line-background-red {
@@ -433,7 +437,22 @@ main {
     width: 300px;
     height: 84px;
     left: -88px;
-    top: 31px;
+    top: 33px;
+}
+
+.line-skills-background {
+    width: 170px;
+    height: 93px;
+    left: -44px;
+    top: 33px;
+}
+
+.courses-background {
+    border-color: #fdd7cd;
+    width: 514px;
+    height: 120px;
+    left: -170px;
+    top: 33px;
 }
 
 .section-personal-infomation--resume h2 {
@@ -463,13 +482,43 @@ main {
     margin-left: 290px;
 }
 
+.skills-courses-information {
+    display: flex;
+    flex-direction: column;
+    margin-top: 65px;
+    text-align: left;
+}
+
+.skills-courses-information:nth-child(2){
+    padding-left: 150px;
+}
+
 .personal-infomation .title {
     padding-bottom: 19px;
     font-size: 2.3rem;
     font-weight: 600;
 }
 
+.title:nth-child(1) {
+    padding-bottom: 41px;
+}
 
+.development-container {
+    display: flex;
+}
+
+.development-container-one {
+    margin-right: 106px;
+}
+
+.development-container-two {
+    margin-left: 18px;
+}
+
+.development-container--p {
+    font-size: 1.6rem;
+    padding-bottom: 28px;
+}
 
 .personal-infomation .subtitle {
     font-size: 1.6rem;
@@ -490,3 +539,63 @@ main {
     background-size: contain;
     padding-left: 20px;
 }
+
+.tools-section-circles {
+    display: flex;
+    flex-direction: column;
+    margin-top: 65px;
+    text-align: left;
+    /* width: 100%; */
+    position: relative; 
+}
+
+.big-circle {
+    background-color: #EAF9FA;
+    border-radius: 100%;
+    width: 630px;
+    height: 644px;
+    position: relative;
+    top: -96px;
+    bottom: 0px;
+    left: 291px;
+}
+
+.small-circle {
+    background-color: transparent;
+    border-radius: 100%;
+    border: 2px solid #DEF2F4;
+    position: relative;
+    width: 632px;
+    height: 666px;
+    bottom: 649px;
+    left: 202px;
+}
+
+.tools-information--right{
+    position: absolute;
+    top: 144px;
+    left: 190px;
+}
+
+.information-right--p {
+    font-size: 4.5rem;
+    font-weight: bold;
+    letter-spacing: -3px;
+    line-height: 6rem;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.information-right--p hr {
+    border: 2px solid black;
+    width: 195px;
+}
+
+.Catchas {
+    font-family: 'Marck Script', cursive;
+    font-size: 3.5rem;
+    color: #9DCBCF;
+    transform: rotate(-7deg);
+    padding-bottom: 20px;
+}
+
