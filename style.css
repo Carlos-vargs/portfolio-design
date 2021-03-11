@@ -101,10 +101,31 @@ main {
 }
 
 .main-center-p {
-    font-size: 3rem;
+    font-size: 6rem;
     font-weight: bold;
-    line-height: 4rem;
+    line-height: 7rem;
     padding-top: 26px;
+    letter-spacing: -4px;
+}
+
+.overflow-building {
+    position: relative;
+    overflow: hidden;
+    width: 231px;
+    height: 20px;
+    bottom: 148px;
+    left: -77px;
+    margin: 0 auto;
+}
+
+.Building-linedown {
+    position: relative;
+    width: 276px;
+    height: 53px;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 7px solid #AEBFF2;
+    right: 29px;
 }
 
 .main-down-p {
@@ -180,7 +201,6 @@ main {
     justify-content: center;
     align-items: center;
     padding-top: 170px;
-    /* position: relative; */
 }
 
 .container--linedown-clients {
@@ -321,7 +341,7 @@ main {
     position: absolute;
     width: 371px;
     height: 204px;
-    top: 41px;
+    top: 37px;
     left: -106px;
 }
 
@@ -462,6 +482,7 @@ main {
 
 .container-targets-information {
     width: 83.5%;
+    height: auto;
     margin: 0 auto;
 }
 
@@ -545,8 +566,7 @@ main {
     flex-direction: column;
     margin-top: 65px;
     text-align: left;
-    /* width: 100%; */
-    position: relative; 
+    position: relative;
 }
 
 .big-circle {
@@ -554,7 +574,7 @@ main {
     border-radius: 100%;
     width: 630px;
     height: 644px;
-    position: relative;
+    position: absolute;
     top: -96px;
     bottom: 0px;
     left: 291px;
@@ -564,10 +584,10 @@ main {
     background-color: transparent;
     border-radius: 100%;
     border: 2px solid #DEF2F4;
-    position: relative;
+    position: absolute;
     width: 632px;
     height: 666px;
-    bottom: 649px;
+    top: -15px;
     left: 202px;
 }
 
@@ -592,10 +612,88 @@ main {
 }
 
 .Catchas {
-    font-family: 'Marck Script', cursive;
+    font-family: "Marck Script", cursive; 
     font-size: 3.5rem;
     color: #9DCBCF;
     transform: rotate(-7deg);
     padding-bottom: 20px;
 }
 
+.container-business {
+    width: 83.5%;
+    height: auto;
+    margin: 327px auto 0px;
+    text-align: left;
+}
+
+
+.container-business-title h2 {
+    font-size: 4rem;
+    letter-spacing: -2px;
+    margin-bottom: 70px;
+}
+
+.overflow-busisness {
+    position: relative;
+    overflow: hidden;
+    width: 180px;
+    height: 20px;
+    bottom: 79px;
+    left: 75px;
+}
+
+.busisness-linedown {
+    position: relative;
+    width: 225px;
+    height: 49px;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 4px solid #fdd7cd;
+    right: 28px;
+
+}
+
+.container-targets-busisness {
+    display: flex;
+}
+
+.container-business-target {
+    width: 506px;
+    height: auto;
+}
+
+.container-business-target:nth-child(2) {
+    margin-top: 170px;
+}
+
+.container-business-target:first-child{
+    margin-right: 38px;
+}
+
+.target-one-point-one h2 {
+    margin-top: 33px;
+    font-size: 2.1rem;
+}
+
+.target-one-point-one p {
+    margin: 26px 0px 70px;
+    font-size: 1.6rem;
+}
+
+.button-target-a {
+    font-size: 1.3rem;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 35px;
+    padding: 26px;
+    margin-top: 64px;
+}
+
+.button-target-a:focus {
+    outline: none;
+}
+
+.button-target-a:hover{
+    background: linear-gradient(208.83deg, black 20%,blue 100%);;
+}
