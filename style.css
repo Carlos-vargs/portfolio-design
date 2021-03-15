@@ -670,6 +670,10 @@ main {
     padding-right: 669px;
 }
 
+#padding-extra {
+    padding-right: 732px;
+}
+
 .overflow-busisness {
     position: relative;
     overflow: hidden;
@@ -741,3 +745,84 @@ main {
 .button-target-a:hover{
     background: linear-gradient(208.83deg, black 20%,blue 100%);
 }
+
+.recommended-review {
+    display: flex;
+}
+
+.recommended-review-txt{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.recommended-review-txt h2 {
+    font-size: 2.5rem;
+    letter-spacing: -2px;
+    padding: 61px 0px 50px 0px;
+}
+
+.recommended-review-txt p{
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+
+.recommended-icons-container {
+    display: flex;
+    justify-content: center;
+    
+    /* width: 50px; */
+}
+
+.recommended-review figure {
+    position: relative;
+    left: -20px;
+}
+
+.recommended-review-txt{
+    padding-left: 70px;
+}
+
+.Christina-Klein{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding: 52px 0px 48px 0px;
+
+}
+
+.Christina-Klein p {    
+    color: gray;
+    font-weight: 700;
+}
+
+.Christina-Klein p:hover{
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+.recommended-icons{
+    border: none;
+    background-color: transparent;
+    width: 20px;
+    height: 17px;
+    background-image: url("./icons/flecha-correcta.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 150px;
+}
+
+.recommended-icons:focus{
+    outline: none;
+}
+
+.recommended-icons:first-child{
+    transform: rotate(180deg);
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+/* .recommended-icons:first-child{
+    transform: rotate(180deg);
+} */
