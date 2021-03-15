@@ -14,6 +14,8 @@
 
 :root {
    --color-text: #0B0C0D;
+   --linedown-color: #D0EAEC;
+   --secundary-linedown-color:  #fdd7cd;
 }
 html{
     font-size: 62.5%;
@@ -82,6 +84,7 @@ main {
     height: auto;
     overflow: hidden;
 }
+
 .main--img {
     width: 150px;
     height: 150px;
@@ -213,7 +216,7 @@ main {
 
 .linedown-clients {
     background-color: transparent;
-    border: 4px solid #fdd7cd;
+    border: 4px solid var(--secundary-linedown-color);
     border-radius: 100%;
     position: absolute;
     width: 313px;
@@ -238,16 +241,17 @@ main {
 .container-clients-img {
     display: flex;
     justify-content: center;
-    width: 100px;
+    width: 120px;
     margin: 26px 75px 0px  75px;
     -webkit-filter:grayscale(1);
     filter: #949AA6;
-
+    align-items: center;
+    height: 63px;
 }
 
 .container-clients-img:hover {
     box-shadow: 0px 1px 6px 0 #20212447;
-    border-radius: 26px;
+    border-radius: 50px;
     -webkit-filter:none;
     filter: none;
 }
@@ -290,6 +294,7 @@ main {
 .background-services {
     display: inline-block;
     width: 60%;
+    max-width: 864px;
     background-color: #F4F6FB;
     height: 600px;
     position: absolute;
@@ -341,7 +346,7 @@ main {
     position: absolute;
     width: 371px;
     height: 204px;
-    top: 37px;
+    top: 41px;
     left: -106px;
 }
 
@@ -405,7 +410,6 @@ main {
 
 .section-personal-infomation--resume {
     position: relative;
-    width: 83.5%;
     text-align: left;
     overflow: hidden;
 }
@@ -441,7 +445,7 @@ main {
 .linedown {
     position: absolute;
     background-color: transparent;
-    border: 4px solid #D0EAEC;
+    border: 4px solid var(--linedown-color);
     border-radius: 100%;
 }
 
@@ -453,7 +457,7 @@ main {
 }
 
 .line-background-red {
-    border-color: #fdd7cd;
+    border-color: var(--secundary-linedown-color);
     width: 300px;
     height: 84px;
     left: -88px;
@@ -468,7 +472,7 @@ main {
 }
 
 .courses-background {
-    border-color: #fdd7cd;
+    border-color: var(--secundary-linedown-color);
     width: 514px;
     height: 120px;
     left: -170px;
@@ -478,18 +482,24 @@ main {
 .section-personal-infomation--resume h2 {
     font-size: 5.5rem;
     letter-spacing: -4px;
+    padding-right: 695px;
 }
 
 .container-targets-information {
-    width: 83.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     height: auto;
-    margin: 0 auto;
 }
 
 .personal-infomation {
     display: flex;
-    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
 }
+
 
 
 .experience--information {
@@ -508,10 +518,23 @@ main {
     flex-direction: column;
     margin-top: 65px;
     text-align: left;
+    /* padding-right: 117px; */
+    /* padding-left: 150px; */
+}
+
+.skills-courses-information:first-child{
+    padding-right: 233px;
+}
+
+#skill-padding {
+    padding-right: 0px;
+    position: relative;
+    right: 264px;
 }
 
 .skills-courses-information:nth-child(2){
-    padding-left: 150px;
+    position: relative;
+    right: 85px;
 }
 
 .personal-infomation .title {
@@ -567,6 +590,7 @@ main {
     margin-top: 65px;
     text-align: left;
     position: relative;
+    right: 400px;
 }
 
 .big-circle {
@@ -606,13 +630,17 @@ main {
     text-decoration: none;
 }
 
+.information-right--p:focus {
+    outline: none;
+}
+
 .information-right--p hr {
     border: 2px solid black;
     width: 195px;
 }
 
 .Catchas {
-    font-family: "Marck Script", cursive; 
+    font-family: "Marck Script", cursive;
     font-size: 3.5rem;
     color: #9DCBCF;
     transform: rotate(-7deg);
@@ -620,10 +648,18 @@ main {
 }
 
 .container-business {
-    width: 83.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     height: auto;
     margin: 327px auto 0px;
     text-align: left;
+}
+
+.text-aling {
+    margin-top: 152px;
 }
 
 
@@ -631,6 +667,7 @@ main {
     font-size: 4rem;
     letter-spacing: -2px;
     margin-bottom: 70px;
+    padding-right: 669px;
 }
 
 .overflow-busisness {
@@ -648,9 +685,16 @@ main {
     height: 49px;
     background-color: transparent;
     border-radius: 100%;
-    border: 4px solid #fdd7cd;
+    border: 4px solid var(--secundary-linedown-color);
     right: 28px;
+}
 
+.linedown-align {
+    border-color: var(--linedown-color);
+}
+
+.overflow-align {
+    left: 125px;
 }
 
 .container-targets-busisness {
@@ -687,7 +731,7 @@ main {
     border: none;
     border-radius: 35px;
     padding: 26px;
-    margin-top: 64px;
+    margin-top: 73px;
 }
 
 .button-target-a:focus {
@@ -695,5 +739,5 @@ main {
 }
 
 .button-target-a:hover{
-    background: linear-gradient(208.83deg, black 20%,blue 100%);;
+    background: linear-gradient(208.83deg, black 20%,blue 100%);
 }
