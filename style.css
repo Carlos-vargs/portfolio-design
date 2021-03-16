@@ -80,9 +80,8 @@ main {
     align-items: center;
     text-align: center;
     width: 100%;
-    min-width: 320px;
     height: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .main--img {
@@ -150,7 +149,8 @@ main {
 }
 
 .main-button:hover {
-    background: linear-gradient(208.83deg, black 20%,blue 100%);
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    font-weight: 600;
 }
 
 .main-button:focus {
@@ -518,8 +518,6 @@ main {
     flex-direction: column;
     margin-top: 65px;
     text-align: left;
-    /* padding-right: 117px; */
-    /* padding-left: 150px; */
 }
 
 .skills-courses-information:first-child{
@@ -601,7 +599,7 @@ main {
     position: absolute;
     top: -96px;
     bottom: 0px;
-    left: 291px;
+    left: 266px;
 }
 
 .small-circle {
@@ -743,7 +741,8 @@ main {
 }
 
 .button-target-a:hover{
-    background: linear-gradient(208.83deg, black 20%,blue 100%);
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    font-weight: 600;
 }
 
 .recommended-review {
@@ -770,8 +769,6 @@ main {
 .recommended-icons-container {
     display: flex;
     justify-content: center;
-    
-    /* width: 50px; */
 }
 
 .recommended-review figure {
@@ -823,6 +820,84 @@ main {
     margin-right: 20px;
 }
 
-/* .recommended-icons:first-child{
-    transform: rotate(180deg);
-} */
+.questions-section{
+    display: inline-block;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 275px;
+}
+
+.questions-section h2{
+    font-size: 3.9rem;
+    font-weight: bold;
+    line-height: 5rem;
+    letter-spacing: -2px;
+
+}
+
+.questions-container{
+    padding-top: 85px;
+    text-align: left;
+}
+
+.questions-container .questions{
+    font-size: 3rem;
+    padding-bottom: 65px;
+    letter-spacing: -1px;
+}
+
+.container-collaboration{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.container-collaboration h2{
+    padding: 250px 0px 77px 0px;
+    letter-spacing: -2px;
+}
+
+.design-app{
+    padding-top: 20px;
+    padding-right: 135px;
+    text-decoration: none;
+    color: #F2CAB3;
+    font-size: 4rem;
+}
+
+.design-app--linedown{
+    background-color: #F2CAB3;
+    width: 405px;
+    height: 4px;
+    margin-right: 140px
+}
+
+.circles{
+    background-color: transparent;
+    border: 1px solid #F2D8C9;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.left-big{
+    right: 513px;
+    bottom: 1222px;
+    width: 600px;
+    height: 720px;
+}
+
+.right-small{
+    left: 507px;
+    bottom: 489px;
+    width: 550px;
+    height: 615px;
+}
+
