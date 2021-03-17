@@ -72,6 +72,7 @@ header nav .nav-right-section{
     width: 25px;
     height: 30px;
     padding-left: 20px;
+    margin-right: 10px;
 }
 
 main {
@@ -81,7 +82,6 @@ main {
     text-align: center;
     width: 100%;
     height: auto;
-    /* overflow: hidden; */
 }
 
 .main--img {
@@ -854,18 +854,20 @@ main {
     justify-content: center;
     align-items: center;
     text-align: left;
-    overflow: hidden;
     font-size: 3rem;
     font-weight: bold;
-    position: relative;
+    margin-bottom: 200px;
+    overflow: hidden;
 }
 
 .container-collaboration h2{
     padding: 250px 0px 77px 0px;
     letter-spacing: -2px;
+    position: relative;
 }
 
 .design-app{
+    display: flex;
     padding-top: 20px;
     padding-right: 135px;
     text-decoration: none;
@@ -873,31 +875,83 @@ main {
     font-size: 4rem;
 }
 
+.design-app:focus{
+    outline: none;
+}
+
+.design-app::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: #F2CAB3;
+    clip-path: polygon(50% 0%, 100% 0, 100% 43%, 89% 43%, 89% 21%, 61% 47%, 50% 38%, 77% 12%, 50% 12%);
+    margin-top: 22px;
+}
+
+
 .design-app--linedown{
     background-color: #F2CAB3;
     width: 405px;
     height: 4px;
-    margin-right: 140px
+    margin-right: 166px;
+    margin-bottom: 131px;
+}
+
+.container-circles--right-left{
+    display: flex;
+    height: auto;
+    position: relative;
 }
 
 .circles{
     background-color: transparent;
     border: 1px solid #F2D8C9;
-    position: absolute;
     border-radius: 100%;
+    position: absolute;
 }
 
 .left-big{
-    right: 513px;
-    bottom: 1222px;
-    width: 600px;
-    height: 720px;
+    right: 263px;
+    bottom: 0px;
+    width: 750px;
+    height: 752px;
 }
 
 .right-small{
-    left: 507px;
-    bottom: 489px;
-    width: 550px;
-    height: 615px;
+    left: 222px;
+    bottom: 0px;
+    width: 528px;
+    height: 568px;
 }
 
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+    border-top: 1px solid rgb(214, 214, 214);
+}
+
+.footer-left{
+    display: flex;
+    list-style: none;
+}
+
+.icons-footer{
+    width: 40px;
+    height: 40px;
+    padding-right: 20px;
+}
+
+
+.footer-align{
+    font-size: 1.7rem;
+    color: var(--color-text);
+}
+
+@media (min-width: 320px) {
+    main{
+    min-width:min-content;
+    }
+}
