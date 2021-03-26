@@ -67,6 +67,7 @@ header nav .nav-right-section{
 }
 
 .darkModeSwitch {
+    position: relative;
     cursor: pointer;
     outline: none;
     border: none;
@@ -78,10 +79,10 @@ header nav .nav-right-section{
 .darkModeSwitch::after{
     display:block;
     background: red;
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 21px;
     position: absolute;
-    top:0;
+    top:4px;
     left:0;
     right:unset;
     border-radius: 3rem;
