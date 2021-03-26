@@ -50,6 +50,46 @@ header nav .nav-right-section{
     font-weight: 500;
 }
 
+.dark{
+    display: flex;
+    align-items: center;
+    display: flex;
+    position: relative;
+    top: 0px;
+    left: 1181px;
+}
+
+.dark span {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.darkModeSwitch {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    width: 60px;
+    height: 30px;
+}
+
+.darkModeSwitch::after{
+    display:block;
+    background: red;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top:0;
+    left:0;
+    right:unset;
+    border-radius: 3rem;
+    transition: all .5s ease;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .5);
+    content: "";
+}
+
 .nav--email-section {
     text-decoration: none;
     color: #3D3E40;
