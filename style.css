@@ -60,7 +60,7 @@ header nav .nav-right-section{
 } */
 
 body.dark{
-    background-color: black;
+    background-color: #212B40;
     color: white;
 }
 
@@ -96,6 +96,7 @@ body.dark{
     /* box-shadow: 0 0 2px 2px rgba(0, 0, 0, .5); */
     content: "";
 }
+
 
 .darkModeSwitch.active{
     background: rgb(60, 60, 165);
@@ -358,6 +359,7 @@ main {
     overflow: hidden;
 }
 
+
 .service-container {
     width: 100%;
     height: auto;
@@ -432,6 +434,16 @@ main {
     width: 330px;
     height: 336px;
 }
+
+.target-service--img-size{
+    width: 75px;
+    height: 75px;
+}
+
+.target-img-size{
+    border-radius: 3px;
+}
+
 
 .target-service:nth-child(-n+2) {
     margin-right: 70px;
@@ -889,7 +901,11 @@ main {
     font-weight: bold;
     line-height: 5rem;
     letter-spacing: -2px;
+}
 
+.emogi{
+    width: 40px;
+    height: 40px;
 }
 
 .questions-container{

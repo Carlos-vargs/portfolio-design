@@ -1,12 +1,16 @@
 //Implementar modo oscuro
 
-const switchButton = document.getElementById('switch')
+const switchButton = document.getElementById("switch")
+const changebk = document.getElementById("bs-change") 
 
- 
-switchButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark') //toggle the HTML body the class 'dark'
-    switchButton.classList.toggle('active')//toggle the HTML button with the id='switch' with the class 'active'
+switchButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark") //toggle HTML body la clase 'dark'
+    switchButton.classList.toggle("active")//toggle HTML button con el id='switch' con la clase 'active'
 })
+
+
+
+
 
 
 //Transiciones a la secccion de "Trusted by brands "
