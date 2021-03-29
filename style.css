@@ -16,6 +16,7 @@
    --color-text: #0B0C0D;
    --linedown-color: #D0EAEC;
    --secundary-linedown-color:  #fdd7cd;
+   --just-white: #fff;
 }
 html{
     font-size: 62.5%;
@@ -41,13 +42,17 @@ header nav .nav-right-section{
     align-items: center;
 }
 
- header nav .nav-right-section a{
+.right-section-a{
     margin-right: 30px;
     color: #3D3E40;
     text-decoration: none;
     font-size: 1.2rem;
     line-height: 1.3rem;
     font-weight: 500;
+}
+
+.rsa-dark{
+    color: var(--just-white);
 }
 
 /* .dark{
@@ -61,7 +66,7 @@ header nav .nav-right-section{
 
 body.dark{
     background-color: #212B40;
-    color: white;
+    color: var(--just-white);
 }
 
 
@@ -115,6 +120,9 @@ body.dark{
     font-size: 1.2rem;
     line-height: 1.3rem;
     padding-right: 10px;
+}
+.nes-dark{
+    color: var(--just-white);
 }
 
 #diferent-a {
@@ -199,7 +207,7 @@ main {
  .main-button {
     margin-top: 26px;
     background-color: black;
-    color: white;
+    color: var(--just-white);
     border: none;
     border-radius: 30px;
     padding: 20px;
@@ -359,6 +367,10 @@ main {
     overflow: hidden;
 }
 
+.active-bs {
+    background-color: #212B40;
+}
+
 
 .service-container {
     width: 100%;
@@ -381,7 +393,10 @@ main {
     border: 2px solid #d6d3d3;
     border-radius: 100%;
     position: relative;
+}
 
+.hidden-circlesdark{
+    border: none;
 }
 
 .position-one {
@@ -430,9 +445,14 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: var(--just-white);
     width: 330px;
     height: 336px;
+    border-radius: 10px;
+}
+
+.target--dark {
+    background-color: #22262F;
 }
 
 .target-service--img-size{
@@ -465,11 +485,19 @@ main {
     padding-left: 33px;
 }
 
+.tst--dark {
+    color: var(--just-white);
+}
+
 .target-service-p {
     padding: 29px 33px;
     font-size: 1.7em;
     color: var(--color-text);
     opacity: .8;
+}
+
+.tsp--dark {
+    color: var(--just-white);
 }
 
 .section-personal-infomation {
@@ -671,6 +699,14 @@ main {
     left: 266px;
 }
 
+.img-job{
+    border-radius: 20px;
+}
+
+.bg-dark{
+    background-color: #525760;
+}
+
 .small-circle {
     background-color: transparent;
     border-radius: 100%;
@@ -697,13 +733,21 @@ main {
     text-decoration: none;
 }
 
+.irp-dark{
+    color: var(--just-white);
+}
+
 .information-right--p:focus {
     outline: none;
 }
 
-.information-right--p hr {
+.irp--hr {
     border: 2px solid black;
     width: 195px;
+}
+
+.irp-dark{
+    border-color: var(--just-white);
 }
 
 .Catchas {
@@ -797,7 +841,7 @@ main {
 
 .button-target-a {
     font-size: 1.3rem;
-    color: white;
+    color: var(--just-white);
     background-color: black;
     border: none;
     border-radius: 35px;

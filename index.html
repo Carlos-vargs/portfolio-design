@@ -15,19 +15,19 @@
     <body class="dark">
         <header>
             <nav>
-                <a href="#" class="nav--email-section"><span></span>@carlos.design</a>
+                <a href="#" class="nav--email-section nes-dark" id="nesDark"><span></span>@carlos.design</a>
                 <ul class="nav-right-section">
                     <li>
-                        <a href="#">Works</a>
+                        <a href="#" class="right-section-a rsa-dark" id="aOne">Works</a>
                     </li>
                     <li>
-                        <a href="#Resume">Resume</a>
+                        <a href="#Resume" class="right-section-a rsa-dark" id="aTwo">Resume</a>
                     </li>
                     <li> 
-                        <a href="#Services">Services</a>
+                        <a href="#Services" class="right-section-a rsa-dark" id="aThree">Services</a>
                     </li>
                     <li> 
-                        <a href="#" id="diferent-a">Contact</a>
+                        <a href="#" class="right-section-a rsa-dark" id="aFour" >Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -93,9 +93,9 @@
                 </div>
             </section>
             <section class="section-services">
-                <div class="background-services">
-                    <div class="circle position-one"></div>
-                    <div class="circle position-two"></div> 
+                <div class="background-services active-bs" id="bs-color">
+                    <div class="circle position-one hidden-circlesdark" id="circles_dark-one"></div>
+                    <div class="circle position-two hidden-circlesdark" id="circles_dark-two"></div> 
                 </div>
                 <div class="service-container">
                     <div class="service-title-container">
@@ -103,26 +103,26 @@
                         <div class="linedown-service"></div>
                     </div>
                     <div class="container-targets">
-                        <div class="target-service">
+                        <div class="target-service target--dark" id="target-service-changeOne">
                             <div class="target-service--img">
                                 <img src="https://thumb.tildacdn.com/tild3838-3765-4435-b935-363064336535/-/resize/100x/-/format/webp/407.png" alt="Dardo" class="target-service--img-size">
                             </div>
-                            <p class="target-service--title">Strategy & Direction</p>
-                            <p class="target-service-p">Defining the problem, identifying the scope and finally, organising the design road map to bring out 100 % of every proyect.</p>
+                            <p class="target-service--title tst--dark" id="tst-md-one">Strategy & Direction</p>
+                            <p class="target-service-p tsp--dark" id="tsp-md_one">Defining the problem, identifying the scope and finally, organising the design road map to bring out 100 % of every proyect.</p>
                         </div>
-                        <div class="target-service">
+                        <div class="target-service target--dark" id="target-service-changeTwo">
                             <div class="target-service--img">
                                 <img src="https://zdtqg3h0l2yrz5yd19tb2tnm-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/emoji_engagement@2x.png" alt="hand" class="target-service--img-size">
                             </div>
-                            <p class="target-service--title">Design UI/UX</p>
-                            <p  class="target-service-p">Websits application or other design related tasks. I love tackling digital problems and help fix them.</p>
+                            <p class="target-service--title tst--dark" id="tst-md-two">Design UI/UX</p>
+                            <p  class="target-service-p tsp--dark" id="tsp-md_two">Websits application or other design related tasks. I love tackling digital problems and help fix them.</p>
                         </div>
-                        <div class="target-service">
+                        <div class="target-service target--dark" id="target-service-changeThree">
                             <div class="target-service--img">
                                 <img src="./imgs/cellphone3.1.png" alt="cellphone" class="target-img-size">
                             </div>
-                            <p class="target-service--title">Mobile App</p>
-                            <p  class="target-service-p">It's 2021, we should really step up our mobile game o bit more, right? Open to tackling new mobile projects.</p>
+                            <p class="target-service--title tst--dark" id="tst-md-three">Mobile App</p>
+                            <p  class="target-service-p tsp--dark" id="tsp-md_three">It's 2021, we should really step up our mobile game o bit more, right? Open to tackling new mobile projects.</p>
                         </div>
                     </div>
                 </div>
@@ -236,12 +236,12 @@
                            </div>
                     </div>
                     <div class="tools-section-circles">
-                       <div class="big-circle"></div>
+                       <div class="big-circle bg-dark" id="big-circle--change"></div>
                        <div class="small-circle">
                             <div class="tools-information--right">
                                 <p class="Catchas">Catchas.</p>
-                                <p class="information-right--p">Got a project?</p>
-                                <a href="#" class="information-right--p">Let's Talk! <hr></a>
+                                <p class="information-right--p irp-dark" id="irp-dark-p">Got a project?</p>
+                                <a href="#" class="information-right--p irp-dark" id="irp-dark-a">Let's Talk! <hr class="irp--hr irp-dark" id="changeHr"></a>
                             </div>
                         </div>
                     </div>
@@ -258,7 +258,7 @@
                     <div class="container-business-target">
                         <div class="target-one-point-one">
                             <figure>
-                                <img src="./imgs/work-and-busisness-1.1.PNG" alt="">
+                                <img src="./imgs/work-and-busisness-1.1.PNG" alt="" class="img-job">
                             </figure>
                             <h2>Jobriver</h2>
                             <p>
@@ -267,7 +267,7 @@
                         </div>
                         <div  class="target-one-point-one">
                             <figure>
-                                <img src="./imgs/work-and-busisness1.2.PNG" alt="">
+                                <img src="./imgs/work-and-busisness1.2.PNG" alt="" class="img-job">
                             </figure>
                             <h2>Jobfix</h2>
                             <p>We helped Vencortex in redesigning a whole new  customer experience.</p>
@@ -277,14 +277,14 @@
                     <div class="container-business-target">
                         <div class="target-one-point-one">
                             <figure>
-                                <img src="./imgs/work-and-busisness-2.1.PNG" alt="">
+                                <img src="./imgs/work-and-busisness-2.1.PNG" alt="" class="img-job">
                             </figure>
                             <h2>Blaze</h2>
                             <p>This template is made for Flowbase and can only be purchased from there. Build a beautiful site for your Technology busisness today using the Blaze template!</p>
                         </div>
                         <div class="target-one-point-one">
                             <figure>
-                                <img src="./imgs/work-and-busisness-2.2.PNG" alt="">
+                                <img src="./imgs/work-and-busisness-2.2.PNG" alt="" class="img-job">
                             </figure>
                             <h2>Ghost.io</h2>
                             <p>Hey Everyone! SaaS tools have become very popular. As wi will see SaaS tool everywhere in 2020. So I prepared a landing page  template for SaaS tools! It will be on sale soon!</p>
