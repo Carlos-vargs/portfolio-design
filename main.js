@@ -35,6 +35,12 @@ const dropDownT = document.getElementById("visisbility-answerT")
 const dropDownTr = document.getElementById("visisbility-answerTr")
 
 
+//Transiciones a la secccion de "Trusted by brands "
+const recommendedIcons = document.getElementById("recommendedIcons")
+const changeRecommended = document.getElementById("ckImg")
+const changeRecommended = document.getElementById("ckImg")
+const changeRecommended = document.getElementById("ckImg")
+
 //Modo oscuro
 switchButton.addEventListener("click", () => {
     document.body.classList.toggle("dark")
@@ -69,6 +75,9 @@ switchButton.addEventListener("click", () => {
 })
 
 //Transiciones a la secccion de "Trusted by brands "
+recommendedIcons.addEventListener("click", () => {
+    changeRecommended.classList.toggle("Ck-img--change")
+})
 
 
 //Respuestas interactivas para el usuario seccion "Questions of clients"

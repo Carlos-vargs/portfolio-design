@@ -884,6 +884,7 @@ main {
     display: flex;
     flex-direction: column;
     text-align: left;
+    padding-left: 480px;
 }
 
 .recommended-review-txt h2 {
@@ -902,21 +903,47 @@ main {
     justify-content: center;
 }
 
-.recommended-review figure {
+.recommendedImg{
     position: relative;
-    left: -20px;
+    left: 415px;
 }
 
-.recommended-review-txt{
-    padding-left: 70px;
-}
+.Ck-img--change{
+    z-index: 1;
+} 
 
 .Ck-img{
+    right: 10px; 
+    top: 25px;
+    position: absolute;
+    z-index: 3;
     width: 437px;
     height: 457px;
     background-image: url("./imgs/Christina\ Klein.PNG");
     background-repeat: no-repeat;
 }
+
+.div2{
+    right: 40px;
+    top: 55px;
+    position: absolute;
+    width: 437px;
+    height: 457px;
+    z-index: 3;
+    background-color: red;
+}
+
+
+.div1{
+    right: 70px;
+    top: 85px;
+    position: absolute;
+    width: 437px;
+    height: 457px;
+    z-index: 3;
+    background-color: blue;
+}
+
 
 .Christina-Klein{
     display: flex;
