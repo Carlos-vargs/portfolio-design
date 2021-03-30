@@ -246,7 +246,7 @@ main {
 
 .size-imgs-2 {
     width: 460px;
-    height: 230px;
+    height: 225px;
     padding: 0px 16px;
     cursor: pointer;
 
@@ -259,15 +259,18 @@ main {
 }
 .size-imgs-5 {
     width: 451px;
-    height: 152px;
+    height: 144px;
     padding: 0px 16px;
     cursor: pointer;
+    
 }
 
 .img-center {
     width: 380px;
     height: 432px;
     cursor: pointer;
+    background-image: url("https://aptus.com.ar/wp-content/uploads/2018/10/redactor.jpg");
+    background-repeat: no-repeat;
 }
 
 .section-clients {
@@ -906,6 +909,13 @@ main {
 
 .recommended-review-txt{
     padding-left: 70px;
+}
+
+.Ck-img{
+    width: 437px;
+    height: 457px;
+    background-image: url("./imgs/Christina\ Klein.PNG");
+    background-repeat: no-repeat;
 }
 
 .Christina-Klein{
