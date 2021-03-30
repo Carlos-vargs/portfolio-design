@@ -125,11 +125,6 @@ body.dark{
     color: var(--just-white);
 }
 
-#diferent-a {
-    padding-right: 0;
-    margin-right: 0;
-}
-
 .nav--email-section span {
     background-image: url("./icons/email.svg");
     background-repeat: no-repeat;
@@ -212,6 +207,16 @@ main {
     border-radius: 30px;
     padding: 20px;
     font-size: 1rem;
+}
+
+.mb-dark {
+    background-color: var(--just-white);
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+.mb-dark:hover{
+    color: var(--just-white);
 }
 
 .main-button:hover {
@@ -842,11 +847,21 @@ main {
 .button-target-a {
     font-size: 1.3rem;
     color: var(--just-white);
-    background-color: black;
+    background-color: var(--color-text);
     border: none;
     border-radius: 35px;
     padding: 26px;
     margin-top: 73px;
+}
+
+.bt-dark{
+    background-color: var(--just-white);
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+.bt-dark:hover{
+    color: var(--just-white);
 }
 
 .button-target-a:focus {
@@ -957,11 +972,40 @@ main {
     text-align: left;
 }
 
-.questions-container .questions{
+
+.questions{
     font-size: 3rem;
-    padding-bottom: 65px;
+    /* padding-bottom: 65px; */
     letter-spacing: -1px;
 }
+
+.arrow-questions{  
+    position: relative;
+    bottom: 20px;
+    left: 607px;
+    border-top: 7px solid var(--color-text);
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    display: inline-block;
+    width: 0;
+    height: 0;
+}
+
+.arrow-q--dark {
+    border-top: 7px solid var(--just-white);
+}
+
+.answer{
+    display: block;
+    font-size: 1.7rem;
+    padding-bottom: 30px;
+}
+
+.answer-Block{
+    display: none;
+}
+
+
 
 .container-collaboration{
     display: flex;
@@ -1064,7 +1108,6 @@ footer{
 
 .footer-align{
     font-size: 1.7rem;
-    color: var(--color-text);
 }
 
 @media (min-width: 320px) {

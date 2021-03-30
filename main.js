@@ -1,5 +1,4 @@
 //Implementar modo oscuro
-
 const switchButton = document.getElementById("switch")
 const changeColor = document.getElementById("bs-color")
 const circlesDarkOne = document.getElementById("circles_dark-one")
@@ -22,7 +21,21 @@ const navAnclasO = document.getElementById("aOne")
 const navAnclasT = document.getElementById("aTwo") 
 const navAnclasTr = document.getElementById("aThree") 
 const navAnclasF = document.getElementById("aFour") 
+const footerDark = document.getElementById("fc-dark")
+const buttonMain = document.getElementById("mb-dark")
+const buttonTarget = document.getElementById("bt-dark")
 
+
+//Respuestas interactivas para el usuario seccion "Questions of clients"
+const questinonsCLient = document.getElementById("questions-switch-one")
+const questinonsCLientT = document.getElementById("questions-switch-two")
+const questinonsCLientTr = document.getElementById("questions-switch-three")
+const dropDown = document.getElementById("visisbility-answer")
+const dropDownT = document.getElementById("visisbility-answerT")
+const dropDownTr = document.getElementById("visisbility-answerTr")
+
+
+//Modo oscuro
 switchButton.addEventListener("click", () => {
     document.body.classList.toggle("dark")
     switchButton.classList.toggle("active")
@@ -47,13 +60,19 @@ switchButton.addEventListener("click", () => {
     navAnclasT.classList.toggle("rsa-dark")
     navAnclasTr.classList.toggle("rsa-dark")
     navAnclasF.classList.toggle("rsa-dark")
+    footerDark.classList.toggle("nes-dark")
+    buttonMain.classList.toggle("mb-dark")
+    buttonTarget.classList.toggle("bt-dark")
+    questinonsCLient.classList.toggle("arrow-q--dark")
+    questinonsCLientT.classList.toggle("arrow-q--dark")
+    questinonsCLientTr.classList.toggle("arrow-q--dark")
 })
 
-
-
-
-
-
 //Transiciones a la secccion de "Trusted by brands "
+
+
 //Respuestas interactivas para el usuario seccion "Questions of clients"
+questinonsCLient.addEventListener("click", () => dropDown.classList.toggle("answer-Block"))
+questinonsCLientT.addEventListener("click", () => dropDownT.classList.toggle("answer-Block"))
+questinonsCLientTr.addEventListener("click", () => dropDownTr.classList.toggle("answer-Block"))
 
