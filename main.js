@@ -24,6 +24,8 @@ const navAnclasF = document.getElementById("aFour")
 const footerDark = document.getElementById("fc-dark")
 const buttonMain = document.getElementById("mb-dark")
 const buttonTarget = document.getElementById("bt-dark")
+const changeRecommendedO = document.getElementById("ckImgO")
+const changeRecommendedT = document.getElementById("ckImgT")
 
 
 //Respuestas interactivas para el usuario seccion "Questions of clients"
@@ -35,11 +37,12 @@ const dropDownT = document.getElementById("visisbility-answerT")
 const dropDownTr = document.getElementById("visisbility-answerTr")
 
 
+
 //Transiciones a la secccion de "Trusted by brands "
-const recommendedIcons = document.getElementById("recommendedIcons")
-const changeRecommended = document.getElementById("ckImg")
-const changeRecommended = document.getElementById("ckImg")
-const changeRecommended = document.getElementById("ckImg")
+const trustedBrands = document.getElementById("recommendedIcons")
+const changeImg = document.getElementById("ckImgChange")
+const primaryTxt = document.getElementById("primary-text")
+const secundaryTxt = document.getElementById("secundary-text")
 
 //Modo oscuro
 switchButton.addEventListener("click", () => {
@@ -72,11 +75,16 @@ switchButton.addEventListener("click", () => {
     questinonsCLient.classList.toggle("arrow-q--dark")
     questinonsCLientT.classList.toggle("arrow-q--dark")
     questinonsCLientTr.classList.toggle("arrow-q--dark")
+    changeRecommendedO.classList.toggle("Ck-img--changeO")
+    changeRecommendedT.classList.toggle("Ck-img--changeT")
+
 })
 
 //Transiciones a la secccion de "Trusted by brands "
-recommendedIcons.addEventListener("click", () => {
-    changeRecommended.classList.toggle("Ck-img--change")
+trustedBrands.addEventListener("click", () => {
+    changeImg.classList.toggle("Ck-img--change")
+    primaryTxt.classList.toggle("position-txt")
+    secundaryTxt.classList.toggle("position-txt-two")
 })
 
 
