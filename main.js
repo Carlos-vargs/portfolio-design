@@ -41,9 +41,10 @@ const dropDownTr = document.getElementById("visisbility-answerTr")
 
 //Transiciones a la secccion de "Trusted by brands "
 const trustedBrands = document.getElementById("recommendedIcons")
-const changeImg = document.getElementById("ckImgChange")
+// const changeImg = document.getElementById("ckImgChange")
 const primaryTxt = document.getElementById("primary-text")
 const secundaryTxt = document.getElementById("secundary-text")
+var cards = ["foto1.jpg", "foto2.jpg"]
 
 //Modo oscuro
 switchButton.addEventListener("click", () => {
@@ -84,7 +85,9 @@ switchButton.addEventListener("click", () => {
 
 //Transiciones a la secccion de "Trusted by brands "
 trustedBrands.addEventListener("click", () => {
-    changeImg.classList.toggle("Ck-img--change")
+    // changeImg.classList.toggle("Ck-img--change")
+    var html = cards.img;
+    document.getElementById("changeOfImg").src +=  html ;
     primaryTxt.classList.toggle("position-txt")
     secundaryTxt.classList.toggle("position-txt-two")
 })
