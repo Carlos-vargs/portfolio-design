@@ -56,20 +56,17 @@ header nav .nav-right-section{
 }
 
 .dark-align{
-    margin-left: 1061px;
+    display: none;
+    margin-left: 1190px;
 } 
+
+.displayDarkAlign{
+    margin-left: 1190px;
+}
 
 body.dark{
     background-color: #212B40;
     color: var(--just-white);
-}
-
-
-.dark span {
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 1.3rem;
-    font-weight: 500;
 }
 
 .darkModeSwitch {

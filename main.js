@@ -26,7 +26,8 @@ const buttonMain = document.getElementById("mb-dark")
 const buttonTarget = document.getElementById("bt-dark")
 const changeRecommendedO = document.getElementById("ckImgO")
 const changeRecommendedT = document.getElementById("ckImgT")
-
+const darkModeMenu = document.getElementById("DarkModeMenu")
+const darkMenuDisplay = document.getElementById("dark_Mode-Menu")
 
 //Respuestas interactivas para el usuario seccion "Questions of clients"
 const questinonsCLient = document.getElementById("questions-switch-one")
@@ -77,6 +78,7 @@ switchButton.addEventListener("click", () => {
     questinonsCLientTr.classList.toggle("arrow-q--dark")
     changeRecommendedO.classList.toggle("Ck-img--changeO")
     changeRecommendedT.classList.toggle("Ck-img--changeT")
+    darkModeMenu.classList.toggle("rsa-dark")
 
 })
 
@@ -93,3 +95,8 @@ questinonsCLient.addEventListener("click", () => dropDown.classList.toggle("answ
 questinonsCLientT.addEventListener("click", () => dropDownT.classList.toggle("answer-Block"))
 questinonsCLientTr.addEventListener("click", () => dropDownTr.classList.toggle("answer-Block"))
 
+
+//Dark menu
+darkModeMenu.addEventListener("click", ()=> {
+    darkMenuDisplay.classList.toggle("dark-align")
+})
