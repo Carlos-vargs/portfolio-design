@@ -975,6 +975,29 @@ main {
     margin-right: 15px;
 }
 
+.container--mini-circle{
+    display: flex;
+    position: relative;
+    left: -187px;
+    top: 6px;
+}
+
+.mini-circle{
+    background-color: rgb(15, 15, 15);
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+    margin-right: 5px;
+}
+
+.color-white{
+    background-color: gray;
+}
+
+.color-black{
+    background-color: rgb(15, 15, 15);
+}
+
 .recommended-icons:focus{
     outline: none;
 }
