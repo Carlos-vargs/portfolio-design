@@ -38,14 +38,10 @@ const dropDownT = document.getElementById("visisbility-answerT")
 const dropDownTr = document.getElementById("visisbility-answerTr")
 
 
-
 //Transiciones a la secccion de "Trusted by brands "
 const trustedBrands = document.getElementById("recommendedIcons")
+const trustedBrandreverse = document.getElementById("recommendedIconsReverse")
 // const changeImg = document.getElementById("ckImgChange")
-const primaryTxt = document.getElementById("primary-text")
-const secundaryTxt = document.getElementById("secundary-text")
-var cards = ["foto1.jpg", "foto2.jpg"]
-
 //Modo oscuro
 switchButton.addEventListener("click", () => {
     document.body.classList.toggle("dark")
@@ -85,11 +81,18 @@ switchButton.addEventListener("click", () => {
 
 //Transiciones a la secccion de "Trusted by brands "
 trustedBrands.addEventListener("click", () => {
-    // changeImg.classList.toggle("Ck-img--change")
-    var html = cards.img;
-    document.getElementById("changeOfImg").src +=  html ;
-    primaryTxt.classList.toggle("position-txt")
-    secundaryTxt.classList.toggle("position-txt-two")
+    document.getElementById("changeOfImg").src =  "foto2.jpg"
+    document.getElementById("title-review--change").innerHTML = "Carlos for my is the better UX/UI Designer"
+    document.getElementById("body-review--change").innerHTML = "and creative visionary. Working with him is always an amazing <br> experience. His design acumen is out of this world and he really."
+    document.getElementById("name-review--change").innerHTML = "Tim Cook"
+
+})
+trustedBrandreverse.addEventListener("click", () => {
+    document.getElementById("changeOfImg").src = "foto1.jpg"
+    document.getElementById("title-review--change").innerHTML = "Carlos is by far my favourite UX/UI Designer"
+    document.getElementById("body-review--change").innerHTML = "and creative visionary. Working with him is always an amazing <br> experience. His design acumen is out of this world and he really <br> pours his heart and soul into every project. Highly recommended for <br> UX/UI Education & speaking opportunities as well as a design lead <br> for projects of all sizes. Thanks for everything you do."
+    document.getElementById("name-review--change").innerHTML = "Christina Klein"
+
 })
 
 

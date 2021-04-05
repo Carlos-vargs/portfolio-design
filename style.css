@@ -57,8 +57,10 @@ header nav .nav-right-section{
 
 .dark-align{
     display: none;
-    margin-left: 1190px;
 } 
+.displayDarkAlign{
+    margin-left: 1190px;
+}
 
 
 
@@ -317,7 +319,7 @@ main {
     box-shadow: 0px 1px 6px 0 #20212447;
     border-radius: 50px;
     filter: none;
-    background-color: white;
+    border: 2px solid white;
 }
 
 
@@ -891,22 +893,6 @@ main {
     line-height: 3rem;
 }
 
-.primary-txt{
-    display: block;
-}
-
-.position-txt{
-    display: none;
-}
-
-.secundary-txt{
-    display: none;
-}
-
-.position-txt-two{
-    display: block;
-}
-
 .recommended-icons-container {
     display: flex;
     justify-content: center;
@@ -982,20 +968,18 @@ main {
     background-color: transparent;
     width: 20px;
     height: 20px;
-    background-image: url("./icons/flecha-correcta.svg");
+    background-image: url("./icons/arrow_arrows_back_direction_left_navigation_right_icon_123236\ \(1\).svg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin-right: 170px;
+}
+
+.reverse-icon{
+    background-image: url("./icons/arrow_arrows_back_direction_left_navigation_right_icon_123237.svg");
+    margin-right: 15px;
 }
 
 .recommended-icons:focus{
     outline: none;
-}
-
-.recommended-icons:first-child{
-    width: 20px;
-    height: 20px;
-    margin-right: 20px;
 }
 
 .questions-section{
