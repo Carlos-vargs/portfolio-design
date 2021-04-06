@@ -86,7 +86,7 @@ trustedBrands.addEventListener("click", () => {
     document.getElementById("miniCircletwo").style.backgroundColor = "gray";
     document.getElementById("changeOfImg").src =  "./imgs/foto2.jpg"
     document.getElementById("title-review--change").innerHTML = "Carlos for my is the better UX/UI Designer"
-    document.getElementById("body-review--change").innerHTML = "and creative visionary. has been one of the best workers<br> and  working with him it is one of the best experiences. His <br> design acumen is out of this world and he really."
+    document.getElementById("body-review--change").innerHTML = "and creative visionary. has been one of the best workers and  working<br> with him it is one of the best experiences. His design acumen is out <br> of this world and he really."
     document.getElementById("name-review--change").innerHTML = "Tim Cook"
 })
 
