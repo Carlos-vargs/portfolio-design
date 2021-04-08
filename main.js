@@ -121,13 +121,13 @@ trustedBrandreverse.addEventListener("click", () => {
     renderCEOS(CEOS[i]);
 })
 
-function renderCEOS(ceo) {
+function renderCEOS(CEO) {
     document.getElementById("miniCircle").style.backgroundColor = "gray";
     document.getElementById("miniCircletwo").style.backgroundColor = "black";
-    document.getElementById("changeOfImg").src = ceo.img
-    document.getElementById("title-review--change").innerHTML = ceo.title
-    document.getElementById("body-review--change").innerHTML = ceo.reviews
-    document.getElementById("name-review--change").innerHTML = ceo.name
+    document.getElementById("changeOfImg").src = CEO.img
+    document.getElementById("title-review--change").innerHTML = CEO.title
+    document.getElementById("body-review--change").innerHTML = CEO.reviews
+    document.getElementById("name-review--change").innerHTML = CEO.name
 }
 
 //Respuestas interactivas para el usuario seccion "Questions of clients"
