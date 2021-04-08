@@ -56,7 +56,7 @@ const CEOS = [
         img:"./imgs/foto2.jpg",
     },
     {   name: "Lorem",
-        title: "Carlos",
+        title: "lorem",
         reviews:"Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Placeat illum quidem a nesciunt repellendus dolore delectus minus! <br>Voluptate maxime quasi sint, molestiae exercitationem hic <br>possimus veniam laudantium nihil consectetur quos.", 
         img:"./imgs/profile-circle.png",
     },
