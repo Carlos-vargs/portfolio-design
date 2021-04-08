@@ -29,6 +29,7 @@ const changeRecommendedT = document.getElementById("ckImgT")
 const darkModeMenu = document.getElementById("DarkModeMenu")
 const darkMenuDisplay = document.getElementById("dark_Mode-Menu")
 
+
 //Respuestas interactivas para el usuario seccion "Questions of clients"
 const questinonsCLient = document.getElementById("questions-switch-one")
 const questinonsCLientT = document.getElementById("questions-switch-two")
@@ -42,6 +43,24 @@ const dropDownTr = document.getElementById("visisbility-answerTr")
 const trustedBrands = document.getElementById("recommendedIcons")
 const trustedBrandreverse = document.getElementById("recommendedIconsReverse")
 // const changeImg = document.getElementById("ckImgChange")
+
+const CEOS = [
+    {   name: "Christina Klein", 
+        title: "Carlos is by far my favourite UX/UI Designer",
+        reviews:"and creative visionary. Working with him is always an amazing <br> experience. His design acumen is out of this world and he really <br> pours his heart and soul into every project. Highly recommended for <br> UX/UI Education & speaking opportunities as well as a design lead <br> for projects of all sizes. Thanks for everything you do.",
+        img:"./imgs/foto1.jpg",
+    },
+    {   name: "Tim Cook",
+        title: "Carlos for my is the better UX/UI Designer",
+        reviews:"and creative visionary. has been one of the best workers and  working<br> with him it is one of the best experiences. His design acumen is out <br> of this world and he really.", 
+        img:"./imgs/foto2.jpg",
+    },
+    {   name: "Lorem",
+        title: "Carlos",
+        reviews:"Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Placeat illum quidem a nesciunt repellendus dolore delectus minus! <br>Voluptate maxime quasi sint, molestiae exercitationem hic <br>possimus veniam laudantium nihil consectetur quos.", 
+        img:"./imgs/profile-circle.png",
+    },
+]
 
 //Modo oscuro
 switchButton.addEventListener("click", () => {
@@ -79,26 +98,37 @@ switchButton.addEventListener("click", () => {
     darkModeMenu.classList.toggle("rsa-dark")
 
 })
-
 //Transiciones a la secccion de "Trusted by brands "
+
+let i = 0
 trustedBrands.addEventListener("click", () => {
-    document.getElementById("miniCircle").style.backgroundColor = "black";
-    document.getElementById("miniCircletwo").style.backgroundColor = "gray";
-    document.getElementById("changeOfImg").src =  "./imgs/foto2.jpg"
-    document.getElementById("title-review--change").innerHTML = "Carlos for my is the better UX/UI Designer"
-    document.getElementById("body-review--change").innerHTML = "and creative visionary. has been one of the best workers and  working<br> with him it is one of the best experiences. His design acumen is out <br> of this world and he really."
-    document.getElementById("name-review--change").innerHTML = "Tim Cook"
+
+    if (i < CEOS.length - 1) {
+        i++
+
+    } else {
+        i = 0
+    }
+    renderCEOS(CEOS[i]);
 })
 
 trustedBrandreverse.addEventListener("click", () => {
-    document.getElementById("miniCircle").style.backgroundColor = "gray";
-    document.getElementById("miniCircletwo").style.backgroundColor = "black";
-    document.getElementById("changeOfImg").src = "./imgs/foto1.jpg"
-    document.getElementById("title-review--change").innerHTML = "Carlos is by far my favourite UX/UI Designer"
-    document.getElementById("body-review--change").innerHTML = "and creative visionary. Working with him is always an amazing <br> experience. His design acumen is out of this world and he really <br> pours his heart and soul into every project. Highly recommended for <br> UX/UI Education & speaking opportunities as well as a design lead <br> for projects of all sizes. Thanks for everything you do."
-    document.getElementById("name-review--change").innerHTML = "Christina Klein"
+    if (i === 0) {
+        i = CEOS.length-1
+    } else {
+        i--
+    }
+    renderCEOS(CEOS[i]);
 })
 
+function renderCEOS(ceo) {
+    document.getElementById("miniCircle").style.backgroundColor = "gray";
+    document.getElementById("miniCircletwo").style.backgroundColor = "black";
+    document.getElementById("changeOfImg").src = ceo.img
+    document.getElementById("title-review--change").innerHTML = ceo.title
+    document.getElementById("body-review--change").innerHTML = ceo.reviews
+    document.getElementById("name-review--change").innerHTML = ceo.name
+}
 
 //Respuestas interactivas para el usuario seccion "Questions of clients"
 questinonsCLient.addEventListener("click", () => dropDown.classList.toggle("answer-Block"))
