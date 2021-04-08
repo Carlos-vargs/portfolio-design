@@ -1164,8 +1164,14 @@ footer{
     font-size: 1.7rem;
 }
 
-/* @media (min-width: 320px) {
+@media (min-width: 320px) {
+    header{
+        min-width: 1313px;
+    }
     main{
     min-width:min-content;
     }
-} */
+    footer{
+        min-width: 1313px;
+    }
+} 
