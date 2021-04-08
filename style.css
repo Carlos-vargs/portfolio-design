@@ -1164,8 +1164,8 @@ footer{
     font-size: 1.7rem;
 }
 
-@media (min-width: 320px) {
+/* @media (min-width: 320px) {
     main{
     min-width:min-content;
     }
-}
+} */
