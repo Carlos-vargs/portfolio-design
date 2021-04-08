@@ -97,7 +97,6 @@ trustedBrandreverse.addEventListener("click", () => {
     document.getElementById("title-review--change").innerHTML = "Carlos is by far my favourite UX/UI Designer"
     document.getElementById("body-review--change").innerHTML = "and creative visionary. Working with him is always an amazing <br> experience. His design acumen is out of this world and he really <br> pours his heart and soul into every project. Highly recommended for <br> UX/UI Education & speaking opportunities as well as a design lead <br> for projects of all sizes. Thanks for everything you do."
     document.getElementById("name-review--change").innerHTML = "Christina Klein"
-    return trustedBrands
 })
 
 
