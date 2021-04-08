@@ -55,11 +55,6 @@ const CEOS = [
         reviews:"and creative visionary. has been one of the best workers and  working<br> with him it is one of the best experiences. His design acumen is out <br> of this world and he really.", 
         img:"./imgs/foto2.jpg",
     },
-    {   name: "Lorem",
-        title: "lorem",
-        reviews:"Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Placeat illum quidem a nesciunt repellendus dolore delectus minus! <br>Voluptate maxime quasi sint, molestiae exercitationem hic <br>possimus veniam laudantium nihil consectetur quos.", 
-        img:"./imgs/profile-circle.png",
-    },
 ]
 
 //Modo oscuro
