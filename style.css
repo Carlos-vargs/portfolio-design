@@ -1159,8 +1159,8 @@ footer{
     header{
         min-width: 1313px;
     }
-    main{
-    min-width:min-content;
+    html{
+    min-width:max-content;
     }
     footer{
         min-width: 1313px;
