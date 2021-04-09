@@ -26,7 +26,6 @@ const buttonMain = document.getElementById("mb-dark")
 const buttonTarget = document.getElementById("bt-dark")
 const changeRecommendedO = document.getElementById("ckImgO")
 const changeRecommendedT = document.getElementById("ckImgT")
-const darkModeMenu = document.getElementById("DarkModeMenu")
 const darkMenuDisplay = document.getElementById("dark_Mode-Menu")
 
 
@@ -42,8 +41,6 @@ const dropDownTr = document.getElementById("visisbility-answerTr")
 //Transiciones a la secccion de "Trusted by brands "
 const trustedBrands = document.getElementById("recommendedIcons")
 const trustedBrandreverse = document.getElementById("recommendedIconsReverse")
-// const changeImg = document.getElementById("ckImgChange")
-
 const CEOS = [
     {   name: "Christina Klein", 
         title: "Carlos is by far my favourite UX/UI Designer",
@@ -129,9 +126,3 @@ function renderCEOS(CEO) {
 questinonsCLient.addEventListener("click", () => dropDown.classList.toggle("answer-Block"))
 questinonsCLientT.addEventListener("click", () => dropDownT.classList.toggle("answer-Block"))
 questinonsCLientTr.addEventListener("click", () => dropDownTr.classList.toggle("answer-Block"))
-
-
-//Dark menu
-darkModeMenu.addEventListener("click", ()=> {
-    darkMenuDisplay.classList.toggle("dark-align")
-})
