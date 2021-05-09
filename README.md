@@ -1,2 +1,2 @@
-# Portafolio
-Informacion personal
+replicating portfolio design
+
