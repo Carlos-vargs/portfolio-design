@@ -301,8 +301,7 @@ main {
     justify-content: center;
     width: 120px;
     margin: 26px 75px 0px  75px;
-    -webkit-filter:grayscale(1);
-    filter: #949AA6;
+    filter: grayscale(1);;
     align-items: center;
     height: 63px;
 }
