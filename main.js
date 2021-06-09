@@ -1,4 +1,3 @@
-//Implementar modo oscuro
 const switchButton = document.getElementById("switch")
 const changeColor = document.getElementById("bs-color")
 const circlesDarkOne = document.getElementById("circles_dark-one")
@@ -29,7 +28,6 @@ const changeRecommendedT = document.getElementById("ckImgT")
 const darkMenuDisplay = document.getElementById("dark_Mode-Menu")
 
 
-//Respuestas interactivas para el usuario seccion "Questions of clients"
 const questinonsCLient = document.getElementById("questions-switch-one")
 const questinonsCLientT = document.getElementById("questions-switch-two")
 const questinonsCLientTr = document.getElementById("questions-switch-three")
@@ -38,7 +36,6 @@ const dropDownT = document.getElementById("visisbility-answerT")
 const dropDownTr = document.getElementById("visisbility-answerTr")
 
 
-//Transiciones a la secccion de "Trusted by brands "
 const trustedBrands = document.getElementById("recommendedIcons")
 const trustedBrandreverse = document.getElementById("recommendedIconsReverse")
 const CEOS = [
@@ -54,7 +51,6 @@ const CEOS = [
     },
 ]
 
-//Modo oscuro
 switchButton.addEventListener("click", () => {
     document.body.classList.toggle("dark")
     switchButton.classList.toggle("active")
@@ -90,7 +86,6 @@ switchButton.addEventListener("click", () => {
     darkModeMenu.classList.toggle("rsa-dark")
 
 })
-//Transiciones a la secccion de "Trusted by brands "
 
 let i = 0
 trustedBrands.addEventListener("click", () => {
@@ -122,7 +117,6 @@ function renderCEOS(CEO) {
     document.getElementById("name-review--change").innerHTML = CEO.name
 }
 
-//Respuestas interactivas para el usuario seccion "Questions of clients"
 questinonsCLient.addEventListener("click", () => dropDown.classList.toggle("answer-Block"))
 questinonsCLientT.addEventListener("click", () => dropDownT.classList.toggle("answer-Block"))
 questinonsCLientTr.addEventListener("click", () => dropDownTr.classList.toggle("answer-Block"))
